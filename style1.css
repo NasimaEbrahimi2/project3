@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(ellipse at center, #111 0%, #000 100%);
+    font-family: 'Press Start 2P', cursive;
+    color: #fff;
+    text-align: center;
+    overflow-x: hidden;
+  }
+  
+  .blinking-lights {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 100%;
+    background: repeating-linear-gradient(
+      to right,
+      orange 20px 20px,
+      yellow 20px 40px,
+      red 40px 60px
+    );
+    animation: blink 1s linear infinite;
+    z-index: 10;
+  }
+  
+  @keyframes blink {
+    1% { opacity: 4; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1; }
+  }
+  
+  .theater {
+    padding: 60px 20px 20px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    text-shadow: 5px 5px 5px #000;
+  }
+  
+  .screen {
+    border: 10px solid #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 40px #ff0, 0 0 80px #f00 inset;
+    padding: 10px;
+    margin: 0 auto;
+    width: 80%;
+    background: #000;
+    height:50 ;
+  }
+  
+  video {
+    width: 100%;
+    border-radius: 10px;
+    height:50 ;
+  }
+  
+  .buttons {
+    margin: 20px 0;
+  }
+  
+  button {
+    background: #ff4444;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 12px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #f00;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background: #ff8888;
+    box-shadow: 0 0 20px #f88;
+  }
